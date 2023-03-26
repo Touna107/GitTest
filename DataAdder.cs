@@ -16,15 +16,15 @@ using UI;
 using UnityEngine;
 using UnityEngine.UI;
 using Workshop;
-using static GitTest.AddDataUtil;
-using static GitTest.Localizer;
-using static GitTest.ModInfo;
+using static DataAdder.AddDataUtil;
+using static DataAdder.Localizer;
+using static DataAdder.ModInfo;
 using FileInfo = System.IO.FileInfo;
 using Random = UnityEngine.Random;
 
-namespace GitTest
+namespace DataAdder
 {
-	public class GitTest : ModInitializer
+	public class DataAdder : ModInitializer
 
 	{
 		public override void OnInitializeMod()
@@ -119,7 +119,7 @@ namespace GitTest
 			FilePath.AddBattleCard(PackageID);
 			FilePath.AddBattleCardAbilities();
 			FilePath.AddBattleDialogues();
-			try { "InitBattleDialogByDefaultBook".PrePatch<UnitDataModel, GitTest>(); }
+			try { "InitBattleDialogByDefaultBook".PrePatch<UnitDataModel, DataAdder>(); }
 			catch (Exception ex) { ex.Error(AppPath); }
 			FilePath.AddCharactersName(PackageID);
 			FilePath.AddDropBook(PackageID);
