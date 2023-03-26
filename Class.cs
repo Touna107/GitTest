@@ -25,7 +25,13 @@ using Random = UnityEngine.Random;
 namespace GitTest
 {
 	public class GitTest : ModInitializer
+	//コメントテスト
+	//コメントテスト
+	//コメントテスト
 	{
+		//コメントテスト
+		//コメントテスト
+		//コメントテスト
 		public override void OnInitializeMod()
 		{
 			AppPath.GetPackageId(ref PackageID);
@@ -601,3 +607,4 @@ namespace GitTest
 		}
 	}
 }
+//コメントテスト
